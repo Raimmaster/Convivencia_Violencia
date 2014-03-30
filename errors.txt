@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 71: expected ':' not found.
-    label llegar_casa
-                     ^
+File "game/script.rpy", line 146: play requires a file
+    play none
+             ^
 
 Ren'Py Version: Ren'Py 6.17.3.327

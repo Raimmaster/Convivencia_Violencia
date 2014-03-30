@@ -1,11 +1,11 @@
-Sat Mar 29 23:55:41 2014
+Sun Mar 30 12:56:38 2014
 Linux-3.2.0-23-generic-i686-with-debian-wheezy-sid
 Ren'Py 6.17.3.327
 Convivencia_Violencia 0.0
 
 
 Windowed mode.
-Screen sizes: virtual=(800, 600) physical=(888, 666)
+Screen sizes: virtual=(800, 600) physical=(800, 600)
 Vendor: 'Tungsten Graphics, Inc'
 Renderer: 'Mesa DRI Intel(R) 945GME x86/MMX/SSE2'
 Version: '1.4 Mesa 8.0.4'
@@ -147,11 +147,11 @@ Texture testing:
 Performance test:
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.044000 seconds.
-- Frame drawn at 0.093000 seconds.
-- Frame drawn at 0.120000 seconds.
-- Frame drawn at 0.140000 seconds.
-- 0.140000 seconds to render 5 frames.
+- Frame drawn at 0.077000 seconds.
+- Frame drawn at 0.109000 seconds.
+- Frame drawn at 0.147000 seconds.
+- Frame drawn at 0.183000 seconds.
+- 0.183000 seconds to render 5 frames.
 Deallocating textures.
 Done deallocating textures.
 About to quit GL.

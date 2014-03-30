@@ -1,0 +1,1 @@
+{"target_version": 8, "name": "Convivencias de la Violencia", "package": "com.convivencia.violencia", "orientation": "landscape", "include_pil": false, "expansion": false, "source": false, "icon_name": "ConvViol", "version": "0.1", "layout": null, "permissions": ["VIBRATE", "INTERNET"], "include_sqlite": false, "numeric_version": "1"}
