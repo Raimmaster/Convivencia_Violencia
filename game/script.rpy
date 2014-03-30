@@ -35,5 +35,5 @@ label start:
     per "Solo 5 minutos mas."
     p "No inventes, levantate y báñate. Te tenes que alistar para poder ir a la escuela."
     
-
+    jump muerte
     return
