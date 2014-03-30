@@ -1,23 +1,37 @@
-# You can place the script of your game in this file.
-# - Puedes colocar el 'script' de tu juego en este archivo.
+# Fondos
+image bg escenario1 = "escenario1.png"
 
-# Declare images below this line, using the image statement.
-# - Declara imágenes bajo esta línea, usando 'image' como
-#   en el ejemplo.
-# eg. image eileen happy = "eileen_happy.png"
+# Personajes
 
-# Declare characters used by this game.
-# - Declara los personajes usados en el juego como en el 
-#   ejemplo.
-define e = Character('Eileen', color="#c8ffc8")
+define e = Character('Tu', color="#c8ffc8")
+init:
+    $ perName = ""
 
+    $ per = DynamicCharacter("perName", color=(192, 64, 64, 255))
 
 # The game starts here.
 # - El juego comienza aquí.
 label start:
+    scene black
+    with fade
+    "¿Tienes un nombre?"
 
-    e "Has creado un nuevo juego Ren'Py."
+    menu:
 
-    e "Añade una historia, imágenes y música, ¡y puedes presentarlo al mundo!"
+        "Sí.":
+            scene bg escenario1 
+            $ perName = renpy.input(_("¿Cual??")) or _("Volentto")
+
+        "No.":    
+            "¿Estás seguro que tu nombre no es Volentto?"
+            "..."
+
+    scene bg escenario1
+    with fade
+    "Es una noche oscura"
+    $ perName = "Volentto"
+    per "Tengo frío."
+
+label nombre:
 
     return

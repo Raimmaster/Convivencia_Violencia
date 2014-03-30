@@ -1,0 +1,25 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 9, in script
+  File "game/script.rpy", line 9, in python
+NameError: name 'down' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "/home/raim/Documents/renpy-6.17.3-sdk/renpy/execution.py", line 294, in run
+    node.execute()
+  File "/home/raim/Documents/renpy-6.17.3-sdk/renpy/ast.py", line 1058, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "/home/raim/Documents/renpy-6.17.3-sdk/renpy/ast.py", line 943, in show_imspec
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "/home/raim/Documents/renpy-6.17.3-sdk/renpy/python.py", line 1392, in py_eval
+    return eval(py_compile(source, 'eval'), globals, locals)
+  File "game/script.rpy", line 9, in <module>
+    scene bg escenario1 at down
+NameError: name 'down' is not defined
+
+Linux-3.2.0-23-generic-i686-with-debian-wheezy-sid
+Ren'Py 6.17.3.327
+Convivencia_Violencia 0.0
