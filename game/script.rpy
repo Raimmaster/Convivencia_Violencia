@@ -3,6 +3,8 @@ image bg escenario1 = "escenario1.png"
 image bg cuarto_nino = "cuartonino.png"
 image bg escuela = "escuela2dejunio.png"
 image bg trucha = "pulperia_shalom.png"
+image bg trucha2 = "pulperia_shalom2.png"
+image bg final = "escena_final.png"
 
 # Imagenes - Personajes 
 # Vol
@@ -52,9 +54,9 @@ image mof tris = "monferno_triste.png"
 # Personajes
 
 define p = Character('Papá', color="#c8ffc8")
-define t = Character('Tor', color="#c8ffc9")
-define m = Character('Monferno', color="#c7ffc9")
-define a = Character('Alduino', color="#c5ffc9")
+define t = Character('Tor', color="#c8dfc9")
+define m = Character('Monferno', color="#c7fdc9")
+define a = Character('Alduino', color="#c5ddc9")
 
 init:
     $ perName = ""
@@ -88,7 +90,7 @@ label start:
     p "Hijo, ya es hora de ir a la escuela."
     show vol dormido at left
     with dissolve
-    per "Solo 5 minutos mas."
+    per "Solo 5 minutos más."
     show papa abusador at right
     with dissolve
     p "Levantate y báñate. Te tienes que alistar para poder ir a la escuela."
@@ -99,7 +101,7 @@ label start:
     show papa feliz
     with dissolve
     per "¡Ya estoy listo!"    
-    p "Esta bien ya podemos irnos."
+    p "Está bien ya podemos irnos."
     show vol desorientado
     with dissolve
     per "¿Hoy tampoco abriras la pulpería?"
@@ -107,10 +109,9 @@ label start:
     with dissolve
     p "No puedo hacerlo en este momento, no preguntes porque, solo obedece."
     per "Ya tienes mucho tiempo sin abrirla, deberías hacerlo."
-    show papa abusador
+    show papa enojado
     with dissolve
     p "¡Calla, te dije que no preguntaras porque!"
-    "Una sombra se percibe detrás de ellos."
     "***5 MINUTOS DESPUES****"
     jump escuela
 
@@ -133,7 +134,8 @@ label escuela:
     show tor abusador at right
     with dissolve
     t "¡Ah que bueno! ¿Por qué tu papa no ha abierto la pulpería? He querido comprar varios dulces y no puedo."
-    per "Pues, la verdad no se. Hoy en la mañana me dijo que no le preguntara sobre eso. Pero no entiendo porque, si el tiene toda la pulpería llena de muchos dulces y cosas. Aparte que le he visto mucho dinero."
+    per "Pues, la verdad no se. Hoy en la mañana me dijo que no le preguntara sobre eso." 
+    per "Pero no entiendo porque, si el tiene toda la pulpería llena de muchos dulces y cosas. Aparte que le he visto mucho dinero."
     show tor incredulo 
     with dissolve
     t "Mmm…¡Que raro! Quisiera ver que tantas cosas tiene tu padre, tal vez podemos comer un par de dulces, asi no se desperdician. "
@@ -145,8 +147,8 @@ label escuela:
 label camino_casa:
     scene bg escenario1
     with fade
-    "Ambos niños van caminando por la calle, cuando Tor se desvía por un callejón y habla con un par de muchachos de apariencia rara."
-    "Junior  lo espera en el mismo lugar mientras Tor conversa. Tor regresa donde Junior."
+    "Ambos niños van caminando por la calle, cuando Tor se desvía por un callejón y habla con un par de muchachos de apariencia de poco fiar."
+    "[perName!t]  lo espera en el mismo lugar mientras Tor conversa. Tor regresa donde [perName!t]."
     show vol incredulo at left
     with dissolve
     show tor platicando at right
@@ -159,7 +161,7 @@ label camino_casa:
 
 label llegar_casa:
     stop music fadeout 1.0
-    scene bg trucha
+    scene bg trucha2
     with fade
     "Llegan a la esquina de la calle y observan al padre conversar con los mismos hombres de apariencia rara que vio a Tor conversar en el callejon."
     "Rápidamente se esconden detrás de un poste de alumbrado público."
@@ -188,20 +190,46 @@ label llegar_casa:
     a "Apurate."
     show aud normal
     with dissolve
-    "Uno de los mareros sacan sus puñales contra Pancho..."
+    "Antes de que uno de los mareros saque sus puñales contra Pancho..."
+    show countdown at Position(xalign=.1, yalign=.1)
+    menu:
+        "Caminar...":
+            "[perName!t] caminó hacia donde su padre..."
+        "Gritar...":
+            per "¡AAAAAAH!"
+        "Quedarse inmóvil del miedo...":
+            per "..."
+
+    hide countdown
     show papa baleado 
     with dissolve
-    "...apuñalándolo 50 veces por todo el cuerpo, desfigurando su rostro en el proceso y degollándolo."
-    
-    "Los 2 mareros salen corriendo a esconderse. El niño atónito observa como el cuerpo del padre, ensangrentado y con muchos tiros, yace en el piso de su casa."
-    "Los pandilleros se disponían a huir, cuando observaron a Junior de pie desde la otra esquina. Junior se dio cuenta que los pandilleros que habían matado a su padre lo habían visto escondido detrás del poste de energía eléctrica."
-    m "Hey, ese mico nos vio. Hay que darle jabón."
-    a "Vos no viste nada güirro. Si nos damos cuenta de que andas de sapo de vamos a matar."
-    m "Let’s go man, go, go."
-    "Los pandilleros salen corriendo y se pierden a lo lejos."
-    show papa decapitado 
+    "El marero le apuñala y dispara por todo el cuerpo, desfigurando su rostro en el proceso y degollándolo."
+    show papa decapitado at right
     with dissolve
-    "Horas después las personas salen de su casa a ver lo que había ocurrido, un vecino llamó a la policía y la ambulancia. Junior  queda atónito por lo que ha ocurrido y no se mueve." 
+    "Los 2 mareros salen corriendo a esconderse. El niño atónito observa como el cuerpo del padre, ensangrentado y con muchos tiros, yace en el piso de su casa."
+    "Los pandilleros se disponían a huir, cuando observaron a [perName!t] de pie desde la otra esquina. [perName!t] se dio cuenta que los pandilleros que habían matado a su padre lo habían visto escondido detrás del poste de energía eléctrica."
+    with fade
+    m "Hey, ese mico nos vio. Hay que darle jabón."
+    scene bg trucha
+    with fade
+    show aud flip at right
+    with dissolve
+    show vol asustado at left
+    with dissolve
+    a "Vos no viste nada güirro. Si nos damos cuenta de que andas de sapo te vamos a matar."
+    m "Let’s go man, go, go."
+    hide aud
+    with fade
+    "Los pandilleros salen corriendo y se pierden a lo lejos."
+    show papa decapitado at right
+    with dissolve
+    show vol llorando
+    with dissolve
+    "Horas después las personas salen de su casa a ver lo que había ocurrido, un vecino llamó a la policía y la ambulancia." 
+    
+    scene bg final
+    with fade
+    "[perName!t]  queda atónito por lo que ha ocurrido y no se mueve." 
 
 # TOMA DE DECISION
     play music "some-time-later.ogg"
