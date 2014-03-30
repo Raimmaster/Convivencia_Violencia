@@ -1,4 +1,4 @@
-Sat Mar 29 18:27:55 2014
+Sat Mar 29 19:06:13 2014
 Linux-3.2.0-23-generic-i686-with-debian-wheezy-sid
 Ren'Py 6.17.3.327
 Convivencia_Violencia 0.0
@@ -147,11 +147,11 @@ Texture testing:
 Performance test:
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.046000 seconds.
-- Frame drawn at 0.099000 seconds.
-- Frame drawn at 0.121000 seconds.
-- Frame drawn at 0.138000 seconds.
-- 0.138000 seconds to render 5 frames.
+- Frame drawn at 0.057000 seconds.
+- Frame drawn at 0.075000 seconds.
+- Frame drawn at 0.094000 seconds.
+- Frame drawn at 0.110000 seconds.
+- 0.110000 seconds to render 5 frames.
 Deallocating textures.
 Done deallocating textures.
 About to quit GL.
