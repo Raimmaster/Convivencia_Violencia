@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 35: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a " at the end of the first line.)
-        p "Hijo, ya es hora de ir a la escuela.”
+File "game/script.rpy", line 71: expected ':' not found.
+    label llegar_casa
+                     ^
 
 Ren'Py Version: Ren'Py 6.17.3.327
