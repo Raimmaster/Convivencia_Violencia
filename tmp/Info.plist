@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleDisplayName</key>
-	<string></string>
+	<string>Convivencia_Violencia</string>
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
@@ -20,19 +20,19 @@
 		</dict>
 	</array>
 	<key>CFBundleExecutable</key>
-	<string></string>
+	<string>Convivencia_Violencia</string>
 	<key>CFBundleIconFile</key>
 	<string>icon</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string></string>
+	<string>Convivencia_Violencia</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string></string>
+	<string>Convivencia_Violencia-1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1.0.1396185265</string>
+	<string>1.0.1396222548</string>
 	<key>UTExportedTypeDeclarations</key>
 	<array>
 		<dict>

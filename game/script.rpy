@@ -5,6 +5,7 @@ image bg escuela = "escuela2dejunio.png"
 image bg trucha = "pulperia_shalom.png"
 image bg trucha2 = "pulperia_shalom2.png"
 image bg final = "escena_final.png"
+image escena_hostigamiento = "escena_hostigamiento.png"
 
 # Imagenes - Personajes 
 # Vol
@@ -51,12 +52,16 @@ image aud flip = im.Flip("Audino.png", horizontal=True)
 image mof aver = "monferno_avergonzado.png"
 image mof tris = "monferno_triste.png"
 
+# Tía
+image tia = "tia.png"
+
 # Personajes
 
 define p = Character('Papá', color="#c8ffc8")
 define t = Character('Tor', color="#c8dfc9")
 define m = Character('Monferno', color="#c7fdc9")
 define a = Character('Alduino', color="#c5ddc9")
+define tia = Character('Tía', color="#c8ffc8")
 
 init:
     $ perName = ""
@@ -161,6 +166,7 @@ label camino_casa:
 
 label llegar_casa:
     stop music fadeout 1.0
+    play music "applying-law.ogg"
     scene bg trucha2
     with fade
     "Llegan a la esquina de la calle y observan al padre conversar con los mismos hombres de apariencia rara que vio a Tor conversar en el callejon."
@@ -230,18 +236,40 @@ label llegar_casa:
     scene bg final
     with fade
     "[perName!t]  queda atónito por lo que ha ocurrido y no se mueve." 
+    "Después de sufrir el shock de haber presenciado el asesinato de su padre, [perName!t] fue llevado a vivir con su tía a la colonia el Rocosal."   
 
 # TOMA DE DECISION
+    stop music fadeout 1.0
     play music "some-time-later.ogg"
     scene black 
     with fade
-    "Los años pasaron y [perName!t] seguía con trauma después de la muerte de su padre, al haberla presenciado y sobre todo, haber sido amenazado por los mismo pandilleros que habían matado a su padre."
 
-    "¿Qué harás ahora?"
+    "Aunque un año haya transcurrido, [perName!t] aun se encuentra afectado emocionalmente por la muerte de su padre, pero igual el mundo sigue girando y proponiendo situaciones en las que nuestro personaje ha de decidir su destino mediante su juicio."
 
+    "Hoy es día de escuela, así que sale de casa mientras su tía le dice adiós."
+
+    "[perName!t] tiene que ser cuidadoso, puesto que al igual que su papá, su tía no dispone de holgura económica y viven en un sector de alto riesgo."
+
+    "Un día, mientras [perName!t] sale de la escuela..."
+    scene escena_hostigamiento with fade
+    "Frente al camino de regreso a casa, hay un chiki molestando a un niño."
+    "No se distingue qué, pero parece que intenta obligarlo a hacer algo."
+    "[perName!t] se detiene."
+    scene black with fade
     menu:
-        "Mejorar a la sociedad.":
-            jump path_bueno
-
-        "Vengarme de los que asesinaron a mi padre.":
-            jump path_batman
+        "Pasar por otro lado sin llamar la atención":
+            "[perName!t] logra llegar a salvo a su casa y espera no encontrarse nunca más en el futuro con una cría de esas."
+        "Pasar de largo sin voltear a ver a nadie, de todas formas el chiki tiene las manos llenas":
+            "Al estar bastante cerca de la situación, el chiki lo llama y por nervios [perName!t] se tropieza con una piedra
+y cae encima de los tipos."
+            "El chiki lo toma personal y los agarra a ambos a patadas."
+            "Al final de la paliza, deciden regresar a sus casas sin el dinero de la comida para mañana."
+        "Tengo miedo, me esconderé.":
+            "Detrás de la pared de una casa, [perName!t] se queda paralizado sin poder mover las piernas."
+            "Mientras tanto, el otro niño es desbalijado."
+            "Un rato después, [perName!t] decide volver a su casa. Será mejor que sea rápido, ya que se hizo pipí."
+        "Fingir un estornudo bien fuerte y gritar varios nombres simulando llamar gente que lo acompañan":
+            "El chiki se pone alerta cuando escucha ruido de multitud, no sin hacer una última amenaza al niño, decide abandonar
+con prontidud la escena."
+            "El niño hostigado, de lejos le hace un gesto discreto a [perName!t], mostrandole agradecimiento."
+            "El día siguiente a la hora del recreo, el niño del día anterior le invita un pollo con tajadas que ambos comparten."

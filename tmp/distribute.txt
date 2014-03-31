@@ -10,21 +10,65 @@ game/tl/None/common.rpy matches ** ([u'all']).
 game/tl/None/common.rpyc matches ** ([u'all']).
 game/tl/None/screens.rpy matches ** ([u'all']).
 game/tl/None/screens.rpyc matches ** ([u'all']).
+game/papa_asustado.png matches ** ([u'all']).
+game/papa_enojado.png matches ** ([u'all']).
+game/tor_incredulo.png matches ** ([u'all']).
+game/pulperia_shalom.png matches ** ([u'all']).
+game/cuartonino.png matches ** ([u'all']).
 game/options.rpy matches ** ([u'all']).
-game/options.rpy.bak matches ** ([u'all']).
+game/nino_enojado.png matches ** ([u'all']).
+game/Audino.png matches ** ([u'all']).
+game/options.rpy.bak matches **.bak (None).
+game/tor_platicando.png matches ** ([u'all']).
 game/script.rpyc matches ** ([u'all']).
+game/nino_llorando.png matches ** ([u'all']).
+game/escena_final.png matches ** ([u'all']).
+game/Audino furioso.png matches ** ([u'all']).
+game/tor_abusador.png matches ** ([u'all']).
+game/coming-back-home.ogg matches ** ([u'all']).
+game/nino_dormido.png matches ** ([u'all']).
+game/papa_feliz.png matches ** ([u'all']).
+game/applying-law.ogg matches ** ([u'all']).
+game/papa_baleado.png matches ** ([u'all']).
+game/papa_incredulo.png matches ** ([u'all']).
 game/script2.rpyc matches ** ([u'all']).
-game/screens.rpy.bak matches ** ([u'all']).
+game/nino_desorientado.png matches ** ([u'all']).
+game/nino_asustado.png matches ** ([u'all']).
+game/Audino enojado.png matches ** ([u'all']).
+game/screens.rpy.bak matches **.bak (None).
+game/Audino triste.png matches ** ([u'all']).
 game/bytecode.rpyb matches ** ([u'all']).
+game/nino_abusador.png matches ** ([u'all']).
+game/papa_llorando.png matches ** ([u'all']).
 game/script2.rpy matches ** ([u'all']).
 game/escenario1.png matches ** ([u'all']).
+game/tor_golpeado.png matches ** ([u'all']).
+game/papa_desorientado.png matches ** ([u'all']).
+game/Audino confundido.png matches ** ([u'all']).
+game/monferno_triste.png matches ** ([u'all']).
+game/papa_decapitado.png matches ** ([u'all']).
+game/nino_platicando.png matches ** ([u'all']).
+game/pulperia_shalom2.png matches ** ([u'all']).
+game/some-time-later.ogg matches ** ([u'all']).
+game/papa_abusador.png matches ** ([u'all']).
 game/script.rpy matches ** ([u'all']).
 game/screens.rpy matches ** ([u'all']).
 game/saves/ matches game/saves/ (None).
+game/monferno_avergonzado.png matches ** ([u'all']).
+game/Audino alegre.png matches ** ([u'all']).
+game/escuela2dejunio.png matches ** ([u'all']).
+game/papa_platicando.png matches ** ([u'all']).
+game/tor_asustado.png matches ** ([u'all']).
+game/Audino molesto.png matches ** ([u'all']).
+game/nino_incredulo.png matches ** ([u'all']).
+game/tia.png matches ** ([u'all']).
+game/nino_feliz.png matches ** ([u'all']).
 game/options.rpyc matches ** ([u'all']).
+game/escena_hostigamiento.png matches ** ([u'all']).
 game/screens.rpyc matches ** ([u'all']).
-.git/ matches .* (None).
+.git/ matches **/.** (None).
 traceback.txt matches traceback.txt (None).
+project.json matches project.json (None).
 README.html matches ** ([u'all']).
 LICENSE.txt doesn't match anything.
 LICENSE.txt matches None (None).
@@ -39,6 +83,8 @@ renpy.exe doesn't match anything.
 renpy.exe matches None (None).
 tutorial/ doesn't match anything.
 tutorial/ matches None (None).
+screenshot0001.png doesn't match anything.
+screenshot0001.png matches None (None).
 update/ doesn't match anything.
 update/ matches None (None).
 rapt/ doesn't match anything.

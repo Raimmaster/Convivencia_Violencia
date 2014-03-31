@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/script2.rpy", line 13: invalid syntax
-        else
-    
+File "game/script.rpy", line 265: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "El chiki lo toma personal y los agarra a ambos a patadas."
+                                                               ^
 
 Ren'Py Version: Ren'Py 6.17.3.327
